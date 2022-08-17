@@ -35,7 +35,7 @@ An example result file for plot motif and 2D sturcture have been saved in [examp
 
 For plot 2d structure, you must download [UCSF Chimera](https://www.cgl.ucsf.edu/chimera/) or [UCSF Chimera](https://www.cgl.ucsf.edu/chimerax/).
 
-- EXAMPLE:<br>
+- EXAMPLE:
 <img src="./plots/1AYX.png"  style=" height:200px" /><img src="./plots/1AYX_motif.png"  style=" height:200px" />
 
 ### Train your own Deep-GH
