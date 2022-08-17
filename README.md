@@ -34,7 +34,7 @@ You can use <plot_logo.r> to plot motif figure or you can use <Chimera - define 
 EXAMPLE:
 
 
-<img src="./plots/1AYX.png"  style="zoom: 25%;" /><img src="./plots/1AYX_motif.png"  style="zoom: 25%;" />
+<img src="./plots/1AYX.png"  style=" width:50px" /><img src="./plots/1AYX_motif.png"  style=" width:50px" />
 
 ### Train your own Deep-GH
 If you want to train your own model, you can use keras_RNN_train_gpu.py in ./train_models
