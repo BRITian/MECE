@@ -24,7 +24,7 @@ A lack of effective prediction tools has limited development of high efficiency 
 [PirD MECE](http://www.elabcaas.cn/pird/mece) 
 
 ##### Use in local: <br>
-The code MECE.py by the following script in console, the ten-fold models are saved in [./models](./models)
+The code MECE.py by the following script in console, the ten-fold models are saved in [./models](./models)<br>
 `python MECE.py -data_url <fasta file dir> -data_url <outpot folder dir> `
 
 ##### Visualization: <br>
