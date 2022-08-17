@@ -39,3 +39,8 @@ The code MECE.py by the following script in console, the ten-fold models are sav
 ### Train your own Deep-GH
 If you want to train your own model, you can use [keras_RNN_train_gpu.py](./train_models/keras_RNN_train_gpu.py) in [train_models](./train_models)
 Our dataset are saved in [data](./data)
+
+  
+### References
+  [MECE: a method for enhancing the catalytic efficiency of glycoside hydrolase based on deep neural networks and molecular evolution]()
+  
