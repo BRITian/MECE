@@ -30,9 +30,7 @@ A lack of effective prediction tools has limited development of high efficiency 
 - Visualization: <br>
 When you finish run the <mece.py> or get zip file from [PirD MECE](http://www.elabcaas.cn/pird/mece), a csv file will be generated, and also plot the weight in the same dir.<br>
 You can use [plot_logo.r](./plot_logo.r) to plot motif figure or you can use <Chimera - define attribute> to plot 2D structure with weight.<br>
-
-An example result file for plot motif and 2D sturcture have been saved in [example](./example), the function for generate these files also in [MECE.py](mece.py)
-
+An example result file for plot motif and 2D sturcture have been saved in [example](./example), the function for generate these files also in [MECE.py](mece.py)<br>
 For plot 2d structure, you must download [UCSF Chimera](https://www.cgl.ucsf.edu/chimera/) or [UCSF Chimera](https://www.cgl.ucsf.edu/chimerax/).<br>
 
 - EXAMPLE:<br>
