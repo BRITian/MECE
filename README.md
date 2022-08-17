@@ -37,8 +37,8 @@ The code MECE.py by the following script in console, the ten-fold models are sav
 <img src="./plots/1AYX.png"  style=" height:200px" /><img src="./plots/1AYX_motif.png"  style=" height:200px" />
 
 ### Train your own Deep-GH
-If you want to train your own model, you can use [keras_RNN_train_gpu.py](./train_models/keras_RNN_train_gpu.py) in [train_models](./train_models)
-Our dataset are saved in [data](./data)
+If you want to train your own model, you can use [keras_RNN_train_gpu.py](./train_models/keras_RNN_train_gpu.py) in [train_models](./train_models)<br>
+Our fasta format dataset are saved in [data](./data), you can use [process_dataset.py]("./data/process_dataset.py") and [process_dataset_1.py]("./data/process_dataset_1.py") to convert it to the train/val/test format datasrt.
 
   
 ### References
