@@ -8,6 +8,6 @@ tensorflow==1.15.0
 #### You can use MECE online or download all of the codes to run MECE in local.
 - Online version:    
 [PirD MECE](http://www.elabcaas.cn/pird/mece)
-
 - Use in local: 
 `python MECE.py -data_url <fasta file dir> -data_url <outpot folder dir> `
+
