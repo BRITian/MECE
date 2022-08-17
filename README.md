@@ -30,10 +30,7 @@ Uhe code MECE.py by the following script in console, the ten-fold models are sav
 - visualization
 When you finish run the <mece.py> or get zip file from [PirD MECE](http://www.elabcaas.cn/pird/mece), a csv file will be generated, and also plot the weight in the same dir.
 You can use <plot_logo.r> to plot motif figure or you can use <Chimera - define attribute> to plot 2D structure with weight.
-
 EXAMPLE:
-
-
 <img src="./plots/1AYX.png"  style=" height:200px" /><img src="./plots/1AYX_motif.png"  style=" height:200px" />
 
 ### Train your own Deep-GH
