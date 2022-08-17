@@ -27,6 +27,10 @@ A lack of effective prediction tools has limited development of high efficiency 
 Uhe code MECE.py by the following script in console, the ten-fold models are saved in [./models](./models)
 `python MECE.py -data_url <fasta file dir> -data_url <outpot folder dir> `
 
+- Use in local: 
+Uhe code MECE.py by the following script in console, the ten-fold models are saved in [./models](./models)
+`python MECE.py -data_url <fasta file dir> -data_url <outpot folder dir> `
+
 - visualization:
 aaaaa
 
