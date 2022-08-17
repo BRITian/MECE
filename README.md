@@ -32,9 +32,9 @@ When you finish run the <mece.py> or get zip file from [PirD MECE](http://www.el
 You can use <plot_logo.r> to plot motif figure or you can use <Chimera - define attribute> to plot 2D structure with weight.
 
 EXAMPLE:
-![image](./plots/1AYX.png)![image](./plots/1AYX_motif.png)
 
 
+<img src="./plots/1AYX.png"  style="zoom: 25%;" /><img src="./plots/1AYX_motif.png"  style="zoom: 25%;" />
 
 ### Train your own Deep-GH
 If you want to train your own model, you can use keras_RNN_train_gpu.py in ./train_models
