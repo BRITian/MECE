@@ -32,7 +32,8 @@ When you finish run the <mece.py> or get zip file from [PirD MECE](http://www.el
 You can use <plot_logo.r> to plot motif figure or you can use <Chimera - define attribute> to plot 2D structure with weight.
 An example result file for plot motif and 2D sturcture have been saved in ./example, the function for generate these files also in [MECE.py](./mece.py)
 For plot 2d structure, you must download [UCSF Chimera](https://www.cgl.ucsf.edu/chimera/) or [UCSF Chimera](https://www.cgl.ucsf.edu/chimerax/).
-EXAMPLE:<br>
+
+- EXAMPLE:<br>
 <img src="./plots/1AYX.png"  style=" height:200px" /><img src="./plots/1AYX_motif.png"  style=" height:200px" />
 
 ### Train your own Deep-GH
