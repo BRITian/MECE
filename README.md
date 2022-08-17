@@ -29,13 +29,13 @@ Uhe code MECE.py by the following script in console, the ten-fold models are sav
 
 - visualization
 When you finish run the <mece.py> or get zip file from [PirD MECE](http://www.elabcaas.cn/pird/mece), a csv file will be generated, and also plot the weight in the same dir.
-You can use <plot_logo.r> to plot motif figure or you can use <Chimera - define attribute> to plot 2D structure with weight.
-An example result file for plot motif and 2D sturcture have been saved in ./example, the function for generate these files also in [MECE.py](./mece.py)
+You can use [plot_logo.r](./plot_logo.r) to plot motif figure or you can use <Chimera - define attribute> to plot 2D structure with weight.
+An example result file for plot motif and 2D sturcture have been saved in [example](./example), the function for generate these files also in [MECE.py](mece.py)
 For plot 2d structure, you must download [UCSF Chimera](https://www.cgl.ucsf.edu/chimera/) or [UCSF Chimera](https://www.cgl.ucsf.edu/chimerax/).
 
 - EXAMPLE:<br>
 <img src="./plots/1AYX.png"  style=" height:200px" /><img src="./plots/1AYX_motif.png"  style=" height:200px" />
 
 ### Train your own Deep-GH
-If you want to train your own model, you can use keras_RNN_train_gpu.py in ./train_models
-Our dataset are saved in ./data
+If you want to train your own model, you can use [keras_RNN_train_gpu.py](./train_models/keras_RNN_train_gpu.py) in [train_models](./train_models)
+Our dataset are saved in [data](./data)
