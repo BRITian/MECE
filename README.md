@@ -32,7 +32,7 @@ When you finish run the <mece.py> or get zip file from [PirD MECE](http://www.el
 You can use <plot_logo.r> to plot motif figure or you can use <Chimera - define attribute> to plot 2D structure with weight.
 
 EXAMPLE:
-![image](https://note.youdao.com/favicon.ico)
+![image](./plots/1AYX.png)
 
 
 
