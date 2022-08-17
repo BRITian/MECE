@@ -33,6 +33,7 @@ You can use <plot_logo.r> to plot motif figure or you can use <Chimera - define 
 
 EXAMPLE:
 ![image](./plots/1AYX.png)
+![image](./plots/1AYX_motif.png)
 
 
 
