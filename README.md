@@ -27,13 +27,7 @@ A lack of effective prediction tools has limited development of high efficiency 
   Uhe code MECE.py by the following script in console, the ten-fold models are saved in [./models](./models)
 `python MECE.py -data_url <fasta file dir> -data_url <outpot folder dir> `
 
-- Visualization: 
-  Uhe code MECE.py by the following script in console, the ten-fold models are saved in [./models](./models)
-`python MECE.py -data_url <fasta file dir> -data_url <outpot folder dir> `
-
-- visualization:
-aaaaa
-
+- Visualization: <br>
 When you finish run the <mece.py> or get zip file from [PirD MECE](http://www.elabcaas.cn/pird/mece), a csv file will be generated, and also plot the weight in the same dir.
 You can use [plot_logo.r](./plot_logo.r) to plot motif figure or you can use <Chimera - define attribute> to plot 2D structure with weight.
 
