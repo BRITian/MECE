@@ -1,16 +1,16 @@
 #install.packages("ggseqlogo")
 
-setwd('E:\\F≈Ã\\R_workspace')
+setwd('E:\\FÁõò\\R_workspace')
 library(ggplot2)
 library(ggplot2)
 library(ggseqlogo)
 
 
-url = 'E:/ø«æ€Ã«√∏/gradcam/csv'
+url = 'E:/gradcam/csv'
 )
-ourl = "E:/ø«æ€Ã«√∏/gradcam/csv/1754_vactor_mean-46.csv"
+ourl = "E:/gradcam/csv/1754_vactor_mean-46.csv"
 
-ourl_blast = "E:/ø«æ€Ã«√∏/gradcam/csv-xin/1754-blast-46.csv"
+ourl_blast = "E:/gradcam/csv-xin/1754-blast-46.csv"
 
 data = read.csv(ourl)
 data <- subset(data, select = -X )
