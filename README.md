@@ -37,8 +37,15 @@ The code MECE.py by the following script in console, the ten-fold models are sav
 <img src="./plots/1AYX.png"  style=" height:200px" /><img src="./plots/1AYX_motif.png"  style=" height:200px" />
 
 ### Train your own Deep-GH
-- If you want to train your own model, you can use [keras_RNN_train_gpu.py](./train_models/keras_RNN_train_gpu.py) in [train_models](./train_models)<br>
-- Our fasta format dataset are supported in [our website](http://www.elabcaas.cn/pird/mece), you can use [process_dataset.py]("./data/process_dataset.py") and [process_dataset_1.py]("./data/process_dataset_1.py") to convert it to the train/val/test format datasrt.
+- Get sequences<br>
+About the glycoside hydrolases, of which there are 174 families in the CAZy database, including the unclassified sequences(GH0), and 10 families that contain no reference sequences. For the remaining 164 families, ypu can obtained the corresponding GenBank numbers through the [CAZy website](http://www.cazy.org/) and downloaded the corresponding amino acid sequences using the Batch Entrez port and Biopython toolkit provided by the National Center for Biotechnology Information database ([NCBI](https://www.ncbi.nlm.nih.gov/)).
+- Download our dataset<br> 
+Or our fasta format dataset are supported in [our website](http://www.elabcaas.cn/pird/mece), you can use [process_dataset.py]("./data/process_dataset.py") and [process_dataset_1.py]("./data/process_dataset_1.py") to convert it to the train/val/test format datasrt.<br>
+    1. The [process_dataset.py]("./data/process_dataset.py") is for select GH Family which have more than 10 sequences
+    2. the [process_dataset_1.py]("./data/process_dataset_1.py") is for generate 10-fold dataset, split dataset to Train/Val/Test dataset and convert 20 residues to number 1-20.
+- Train your own model<br>
+The code is [keras_RNN_train_gpu.py](./train_models/keras_RNN_train_gpu.py) in [train_models](./train_models)<br>
+
 
   
 ### References
