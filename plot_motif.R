@@ -10,8 +10,6 @@ url = 'E:/gradcam/csv'
 )
 ourl = "E:/gradcam/csv/1754_vactor_mean-46.csv"
 
-ourl_blast = "E:/gradcam/csv-xin/1754-blast-46.csv"
-
 data = read.csv(ourl)
 data <- subset(data, select = -X )
 names(data) <- c('A', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'K', 'L', 'M', 'N', 'P', 'Q', 'R', 'S', 'T', 'V', 'W', 'Y')
