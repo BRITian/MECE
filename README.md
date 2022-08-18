@@ -4,7 +4,7 @@
 ---
 A lack of effective prediction tools has limited development of high efficiency glycoside hydrolases (GH), which are in high demand for numerous industrial applications. This proof-of-concept study demonstrates the use of a deep neural network and molecular evolution (MECE) platform for predicting catalysis-enhancing mutations in GHs. The MECE platform integrates a deep learning model (DeepGH), trained with 119 GH family protein sequences from the CAZy database. MECE also includes a quantitative mutation design component that uses Gradient-weighted Class Activation Mapping (Grad-CAM) with homologous protein sequences to identify key features for mutation in the target GH, this component can be used in this page.
 
-
+![image](./plots/a33a78e90d68d865915fb91fa150b2b.jpg)
 ---
 
 
