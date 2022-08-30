@@ -45,7 +45,13 @@ Or our fasta format dataset are supported in [our website](http://www.elabcaas.c
     2. the [process_dataset_1.py]("./data/process_dataset_1.py") is for generate 10-fold dataset, split dataset to Train/Val/Test dataset and convert 20 residues to number 1-20.
 - Train your own model<br>
 The code is [keras_RNN_train_gpu.py](./train_models/keras_RNN_train_gpu.py) in [train_models](./train_models)<br>
-
+    
+### Sum weights after Water<br>
+- Firstly, you should use the [Water tool](http://emboss.sourceforge.net/apps/release/6.6/emboss/apps/water.html) for perform a pairwise local alignment of each sequence homologous to the wild type.<br>
+- Then, based on the results of sequence alignment, the functionally relevant evolutionary feature matrix (Me) of the wild type was obtained by summing all sequence feature matrices using the wild type as the standard.
+- Then, The difference between the mutant site Pj,max with the highest importance score in each row of the Me and the wild-type site Pj,wt was compared, and the ploidy relationship (Fj) between Pj,max and Pj,wt was calculated using the division method. 
+-Finally, The sites with Fj ≥ 20-fold were selected as single point mutants. The loci with Fj ≥ 20-fold were selected according to the ploidy size to design a multipoint mutant.
+- The relevant code is stored in [process_water](./process_water)
 
   
 ### References
