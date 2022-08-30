@@ -53,8 +53,8 @@ The code is [keras_RNN_train_gpu.py](./train_models/keras_RNN_train_gpu.py) in [
 -Finally, The sites with Fj ≥ 20-fold were selected as single point mutants. The loci with Fj ≥ 20-fold were selected according to the ploidy size to design a multipoint mutant.
 - The relevant code is stored in [process_water](./process_water).<br>
     1. [align.py](./process_water/align.py) for align the sequence according to the result of WATER
-    2. [Me.py] for(./process_water/Me.py) calculate the value of Me
-    3. [Fj.py] for(./process_water/Fj.py) calculate the value of Fj
+    2. [Me.py](./process_water/Me.py) for calculate the value of Me
+    3. [Fj.py](./process_water/Fj.py) for calculate the value of Fj
 
   
 ### References
