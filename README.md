@@ -49,6 +49,10 @@ Or our fasta format dataset are supported in [our website](http://www.elabcaas.c
     2. the [process_dataset_1.py]("./data/process_dataset_1.py") is for generate 10-fold dataset, split dataset to Train/Val/Test dataset and convert 20 residues to number 1-20.
 - Train your own model<br>
 The code is [keras_RNN_train_gpu.py](./train_models/keras_RNN_train_gpu.py) in [train_models](./train_models)<br>
+- Note: If you want to replicate our work, try the dataset on our zenodo page:
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8146609.svg)](https://doi.org/10.5281/zenodo.8146609)
+
+
     
 ### Sum weights after Water<br>
 - Firstly, you should use the [Water tool](http://emboss.sourceforge.net/apps/release/6.6/emboss/apps/water.html) for perform a pairwise local alignment of each sequence homologous to the wild type.<br>
