@@ -2,6 +2,12 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
+target_sequence_file=""
+target_gradcam_result_file=""
+step_4_output_file=""
+plot_path=""
+a = 46  #target GH Family
+
 aa = ['A', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'K', 'L', 'M', 'N', 'P', 'Q', 'R', 'S', 'T', 'V', 'W', 'Y']
 dict_abb_num = {'A': '01', 'C': '02', 'D': '03', 'E': '04', 'F': '05',
                 'G': '06', 'H': '07', 'I': '08', 'K': '09', 'L': '10',
@@ -10,7 +16,7 @@ dict_abb_num = {'A': '01', 'C': '02', 'D': '03', 'E': '04', 'F': '05',
 x = []
 y = []
 
-url_1754 = r"E:\壳聚糖酶\c1754.txt"
+url_1754 = target_sequence_file
 with open(url_1754) as file:
     seq_1754_wt = file.readlines()[1].strip('\n')
 # print(seq_1754_wt)
@@ -18,8 +24,8 @@ max_index = []
 for i in seq_1754_wt:
     max_index.append(int(dict_abb_num.get(i))-1)
 # print(max_index)
-a = 46
-url1 = r"E:\壳聚糖酶\gradcam\csv-xin\1754_vactor_mean-%s.csv" % a
+
+url1 = target_gradcam_result_file 
 df = pd.read_csv(url1, index_col=0)[:-1]
 df.columns = aa
 # print(df)
@@ -44,7 +50,7 @@ print(wt_value)
 # #     max_index.append(np.argmax(df.values[i]))
 # # print(max_index)
 # print(df.values[153][max_index[153]])
-url2 = r"E:\壳聚糖酶\gradcam\csv-xin\1754-blast-%s.csv" % a
+url2 = step_4_output_file
 df2 = pd.read_csv(url2, index_col=0)
 # print(df2)
 # df2_xin = df2.loc[rownames]
@@ -131,7 +137,7 @@ for i in b:
     y.append(i[0])
 print(x)
 print(y)
-url_png = r'E:\壳聚糖酶\gradcam\csv-xin\\1754-jiancheng-%s.png' % a
+url_png = plot_path
 title = a
 plt.plot(x, y, marker='o')
 plt.title(title)
@@ -139,6 +145,3 @@ plt.xticks(rotation=45)
 # plt.savefig(url_png, dpi=600)
 plt.show()
 
-# with open(r"E:\壳聚糖酶\gradcam\1754-突变体设计2.txt", 'w') as file:
-#     for i in range(len(x)):
-#         file.write('%s\t%s\t%s\n' % ('1754-%s' % (81+i), x[i], y[i]))
