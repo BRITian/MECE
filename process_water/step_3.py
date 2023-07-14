@@ -1,7 +1,12 @@
 import pandas as pd
 import numpy as np
 
-with open(r'E:\壳聚糖酶\gradcam\c1754.pro.align') as file:
+step_2_output_file=""
+homologous_seq_path=""
+water_result_path=""
+a = str("46")  #target GH Family
+
+with open(step_2_output_file) as file:
     line = file.readlines()
 id = [i.strip('\n').split()[0][1:].split('.')[0] for i in line[::2]][1:]
 seq = [i.strip('\n') for i in line[1::2]][1:]
@@ -14,7 +19,7 @@ dict_id_seq = dict(zip(id, seq))
 # dict_id_seq = dict(zip(id_xin, seq_xin))
 # print(dict_id_seq)
 
-with open(r"E:\壳聚糖酶\gradcam\1754blastdb90-xin.txt") as file2:
+with open(homologous_seq_path) as file2:
     line2 = file2.readlines()
 id2 = [i.strip('\n').split()[0][1:].split('.')[0] for i in line2[::2]][1:]
 seq2 = [i.strip('\n') for i in line2[1::2]][1:]
@@ -23,15 +28,13 @@ seq2 = [i.strip('\n') for i in line2[1::2]][1:]
 dict_id_seq2 = dict(zip(id2, seq2))
 print(dict_id_seq2)
 
-# url = r'E:\壳聚糖酶\gradcam\csv-18\\'
-# url_xin = r'E:\壳聚糖酶\gradcam\\'
-a = '46'
+
 p_xin = []
 for key, value in dict_id_seq.items():
     # print(key)
     # print(value)
 
-    url2 = r"E:\壳聚糖酶\deeplift\1754-blast\align\align.%s.1.water" % key
+    url2 = water_result_path+".%s.water" % key
     url3 = r"E:\壳聚糖酶\gradcam\csv-%s\%s_vactor_mean.csv" % (a, key)
     with open(url3) as file3:
         line3 = file3.readlines()[1:-1]
