@@ -1,9 +1,17 @@
+# In the third step, you need to use the Grad-CAM method to calculate the feature matrix (Mi) of homologous sequence
+# This script is the fourth step, which averages all sequence feature matrices according to the sequence comparison results, using the wild type as the standard, to obtain the functionally relevant evolutionary feature matrix (Me) for the wild type.
+
+
 import pandas as pd
 import numpy as np
 
 step_2_output_file=""
 homologous_seq_path=""
 water_result_path=""
+homologous_gradcam_result_folder=""
+target_seq_len=278
+output_path=""
+
 a = str("46")  #target GH Family
 
 with open(step_2_output_file) as file:
@@ -35,7 +43,7 @@ for key, value in dict_id_seq.items():
     # print(value)
 
     url2 = water_result_path+".%s.water" % key
-    url3 = r"E:\壳聚糖酶\gradcam\csv-%s\%s_vactor_mean.csv" % (a, key)
+    url3 = homologous_gradcam_result_folder+"\csv-%s\%s_vactor_mean.csv" % (a, key)
     with open(url3) as file3:
         line3 = file3.readlines()[1:-1]
     p = []
@@ -98,7 +106,7 @@ for key, value in dict_id_seq.items():
                 else:
                     temp.append([np.nan] * 20)
                     tiaojian = False
-    if len(temp) != 278:
+    if len(temp) != target_seq_len:
         print('temp')
     # print(len(temp))
     p_xin.append(temp)
@@ -107,5 +115,4 @@ p_arr = np.array(p_xin, dtype=float)
 print(p_arr.shape)
 p_arr = np.nanmean(np.array(p_arr), 0)
 df = pd.DataFrame(p_arr)
-csv_name = r"E:\壳聚糖酶\gradcam\csv-xin\1754-vactor_mean-duizhao%s.csv" % a
-df.to_csv(csv_name)
+df.to_csv(output_path)
