@@ -61,7 +61,7 @@ num_classes = 119
 cut_num=119
 
 aan=21		# 0,1,2,3 A,T,G,C
-max_seq_len = 735
+max_seq_len = 735   #choose 735 or 2000
 # max_seq_len = rep_id
 # input image dimensions
 #img_rows, img_cols = 80, 105
