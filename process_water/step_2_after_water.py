@@ -1,4 +1,14 @@
-with open(r"E:\壳聚糖酶\gradcam\1754blastdb90-xin.txt") as file:
+# In the first step, you need to use the WATER tool to make a two by two comparison
+# This script is the second step to align the target sequence obtained using water with the results of a two-by-two comparison of homologous sequences.
+# the homologous sequences were collected using the online NCBI Blast tool with 60% < identity < 100%, 50% < coverage < 100%, and E-value < e–5. 
+
+homologous_seq_path=""
+water_result_path=""
+target_protein_name="c1754"
+target_seq_len=278
+output_path=""
+
+with open(homologous_seq_path) as file:
     line = file.readlines()
 id = line[::2]
 print(id)
@@ -6,10 +16,7 @@ print(id)
 seq = []
 p = []
 for b in range(len(id)):
-    ourl = r"E:\壳聚糖酶\deeplift\1754-blast\align\align.%s.water" % id[b].split()[0][1:]
-# a = 'AWL41499.1'
-# a = 'MPY61539.1'
-#     ourl = r"E:\壳聚糖酶\gradcam\A01\align\%s.water" % a
+    ourl = water_result_path".%s.water" % id[b].split()[0][1:]
     print(id[b].split()[0][1:])
     with open(ourl) as file:
         line = file.readlines()
@@ -23,10 +30,8 @@ for b in range(len(id)):
             pass
         elif i == '\n':
             pass
-        elif i.split()[0] == 'c1754':
+        elif i.split()[0] == target_protein_name:
             line_a01.append(i)
-            # print(i.split())
-            # print(i)
         elif i.split()[0].split('.')[0] == id[b].split()[0][1:].split('.')[0]:
             line_xin.append(i.split()[2])
     print(len(line_a01))
@@ -47,11 +52,11 @@ for b in range(len(id)):
     # print(s)
     if int(line_a01[0].split()[1]) != 1:
         s = '-' * (int(line_a01[0].split()[1])-1) + s
-    if int(line_a01[-1].split()[3]) != 278:
+    if int(line_a01[-1].split()[3]) != target_seq_len:
         s = s + '-' * (278 - int(line_a01[-1].split()[3]))
     print(s)
     seq.append(s)
-with open(r'E:\壳聚糖酶\gradcam\c1754.pro.align', 'w') as file:
+with open(output_path, 'w') as file:
     for b in range(len(id)):
         file.write('>%s\t%s\n' % (id[b].split()[0][1:], p[b]))
         file.write('%s\n' % seq[b])
