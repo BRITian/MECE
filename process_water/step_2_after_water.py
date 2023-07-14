@@ -16,7 +16,7 @@ print(id)
 seq = []
 p = []
 for b in range(len(id)):
-    ourl = water_result_path".%s.water" % id[b].split()[0][1:]
+    ourl = water_result_path+".%s.water" % id[b].split()[0][1:]
     print(id[b].split()[0][1:])
     with open(ourl) as file:
         line = file.readlines()
