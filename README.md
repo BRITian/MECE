@@ -59,10 +59,8 @@ The code is [keras_RNN_train_gpu.py](./train_models/keras_RNN_train_gpu.py) in [
 - Then, based on the results of sequence alignment, the functionally relevant evolutionary feature matrix (Me) of the wild type was obtained by summing all sequence feature matrices using the wild type as the standard.
 - Then, The difference between the mutant site Pj,max with the highest importance score in each row of the Me and the wild-type site Pj,wt was compared, and the ploidy relationship (Fj) between Pj,max and Pj,wt was calculated using the division method. 
 -Finally, The sites with Fj ≥ 20-fold were selected as single point mutants. The loci with Fj ≥ 20-fold were selected according to the ploidy size to design a multipoint mutant.
-- The relevant code is stored in [process_water](./process_water).<br>
-    1. [align.py](./process_water/align.py) for align the sequence according to the result of WATER
-    2. [Me.py](./process_water/Me.py) for calculate the value of Me
-    3. [Fj.py](./process_water/Fj.py) for calculate the value of Fj
+- For the process, scripts, and demo files, please visit [process_water](./process_water).<br>
+
 
   
 ### References
