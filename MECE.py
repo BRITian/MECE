@@ -106,9 +106,10 @@ def grad_cam(seq,save_dir):
     pred_data = np.array(pred_data, dtype='int').tolist()
     x_pred.append(pred_data)
     x_pred = np.array(x_pred)
-    max_seq_len = 735
+    max_seq_len = 735   
     x_pred = sequence.pad_sequences(x_pred, maxlen=max_seq_len, padding='post', truncating='post')
-    heatmaps = np.zeros([1, 367], dtype=float)
+    heatmaps = np.zeros([1, int(max_seq_len/2)], dtype=float) #Please use this shape for model 2022
+    #heatmaps = np.zeros([1, int(max_seq_len/4)], dtype=float) #Please use this shape for model 2023
     y_pred_mean=[]
 
     for model_num in range(1):
@@ -117,7 +118,7 @@ def grad_cam(seq,save_dir):
         y_pred = list(model.predict(x_pred)[0])
         y_pred_mean.append(gh[y_pred.index(max(y_pred))])
         ret = model.output[0, y_pred.index(max(y_pred))]  # set point
-        last_conv_layer = model.get_layer("conv1d_2")
+        last_conv_layer = model.get_layer("conv1d_2")   #Please use conv1d_2 for model 2022 and conv1d_3 for model 2023.
         fm = last_conv_layer.output
         grads = K.gradients(ret, last_conv_layer.output)[0]
         pooled_grads = K.mean(grads, axis=(0, 1))
