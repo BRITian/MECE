@@ -25,8 +25,8 @@ A lack of effective prediction tools has limited development of high efficiency 
 
 ##### Use in local: <br>
 The code MECE.py by the following script in console, the ten-fold models are saved in Zenodo<br>
-MECE Model 2022 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8146585.svg)](https://doi.org/10.5281/zenodo.8146585) <br>
-MECE Model 2023-735 <br>
+- MECE Model 2022 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8146585.svg)](https://doi.org/10.5281/zenodo.8146585) <br>
+- MECE Model 2023-735 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8146708.svg)](https://doi.org/10.5281/zenodo.8146708) <br>
 MECE Model 2023-2000 <br>
 
 `python MECE.py -data_url <fasta file dir> -data_url <outpot folder dir> `
