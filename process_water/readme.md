@@ -10,8 +10,6 @@
 
 - You can try this process with the sequence <b>c1754</b> from our experiment: [example_file](c1754.fa).
 
-## c1754 homolog sequences
-
 `c1754_homologs_used_in_study.fasta` contains the homologous sequences used for the c1754 analysis reported in the paper.
 
 This file is provided because rerunning BLASTP at a later date may return a different homolog set due to database updates.
